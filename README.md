@@ -1,1 +1,3 @@
-# hands-on-6-genetic-algorithms
+# Hands on 6 - Genetic algorithms
+
+Algoritmo Genético para resolver el problema de MAXONES
