@@ -120,4 +120,36 @@ public class GeneticAlgorithm {
 
         return newPopulation;
     }
+
+    public int getPopulationSize() {
+        return populationSize;
+    }
+
+    public void setPopulationSize(int populationSize) {
+        this.populationSize = populationSize;
+    }
+
+    public double getMutationRate() {
+        return mutationRate;
+    }
+
+    public void setMutationRate(double mutationRate) {
+        this.mutationRate = mutationRate;
+    }
+
+    public double getCrossoverRate() {
+        return crossoverRate;
+    }
+
+    public void setCrossoverRate(double crossoverRate) {
+        this.crossoverRate = crossoverRate;
+    }
+
+    public int getElitismCount() {
+        return elitismCount;
+    }
+
+    public void setElitismCount(int elitismCount) {
+        this.elitismCount = elitismCount;
+    }    
 }
