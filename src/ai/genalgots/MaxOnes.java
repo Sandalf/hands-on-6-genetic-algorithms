@@ -7,14 +7,16 @@ package ai.genalgots;
 public class MaxOnes {
 
     public static void main(String[] args) {
-        int populationSize = 10;
+        int populationSize = 30;
         double mutationRate = 0.001;
         double crossoverRate = 0.95;
-        int elitismCount = 2;
+        int elitismCount = 0;
         int chromosomeLength = 10;
         GeneticAlgorithm ga = new GeneticAlgorithm(populationSize, mutationRate, crossoverRate, elitismCount);
         Population population = ga.initPopulation(chromosomeLength);
         int generation = 1;
+
+        ga.evalPopulation(population);
 
         while (!ga.isTerminationConditionMet(population)) {
             printGenerationData(generation, population);
